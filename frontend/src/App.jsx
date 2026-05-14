@@ -16,7 +16,7 @@ function App() {
       <AuthProvider>
         <div className="min-h-screen bg-gray-50 flex flex-col">
           <Header />
-          <main className="flex-grow">
+          <main className="flex-1">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/compare" element={<ComparePage />} />

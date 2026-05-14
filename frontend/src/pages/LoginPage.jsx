@@ -21,7 +21,7 @@ const LoginPage = () => {
     setIsLoading(true);
     setError('');
     
-    // Имитация задержки
+    
     setTimeout(() => {
       if (login(email, password)) {
         navigate('/profile');

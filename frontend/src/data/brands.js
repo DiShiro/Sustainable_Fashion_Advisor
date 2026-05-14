@@ -1,5 +1,4 @@
 export const brands = {
-  // === НИЗКИЙ РЕЙТИНГ (D) ===
   "zara": {
     id: "zara",
     name: "Zara",
@@ -10,10 +9,9 @@ export const brands = {
     carbon: 68,
     alternatives: ["Arket", "Armedangels", "99recycle", "Patagonia"],
     alternativeIds: ["arket", "armedangels", "99recycle", "patagonia"],
-    description: "Zara входит в группу Inditex. Есть коллекция 'Join Life', но основной объем производства — fast fashion. Условия труда в странах Азии оцениваются как критические. Бренд обещает к 2025 году использовать 100% устойчивых материалов, но пока прогресс медленный.",
+    description: "Zara входит в группу Inditex. Есть коллекция 'Join Life', но основной объем производства — fast fashion. Условия труда в странах Азии оцениваются как критические.",
     founded: 1975,
-    country: "Испания",
-    website: "https://www.zara.com"
+    country: "Испания"
   },
   "shein": {
     id: "shein",
@@ -25,10 +23,9 @@ export const brands = {
     carbon: 85,
     alternatives: ["Armedangels", "99recycle", "Patagonia", "Weekday"],
     alternativeIds: ["armedangels", "99recycle", "patagonia", "weekday"],
-    description: "Shein — один из самых критикуемых брендов за экологию и условия труда. Огромные объёмы производства, низкое качество, отсутствие прозрачности. Рекомендуется избегать покупок в этом бренде.",
+    description: "Shein — один из самых критикуемых брендов за экологию и условия труда. Огромные объёмы производства, низкое качество, отсутствие прозрачности.",
     founded: 2008,
-    country: "Китай",
-    website: "https://www.shein.com"
+    country: "Китай"
   },
   "hm": {
     id: "hm",
@@ -40,10 +37,51 @@ export const brands = {
     carbon: 55,
     alternatives: ["H&M Conscious", "Weekday", "Monki", "Arket"],
     alternativeIds: ["hm-conscious", "weekday", "monki", "arket"],
-    description: "У H&M есть программа сбора старой одежды. Однако бренд остается одним из лидеров overproduction. Рекомендуем выбирать линию 'Conscious' из переработанных материалов. Бренд имеет цель стать циркулярным к 2030 году.",
+    description: "У H&M есть программа сбора старой одежды. Однако бренд остается одним из лидеров overproduction. Рекомендуем выбирать линию 'Conscious' из переработанных материалов.",
     founded: 1947,
-    country: "Швеция",
-    website: "https://www.hm.com"
+    country: "Швеция"
+  },
+  "bershka": {
+    id: "bershka",
+    name: "Bershka",
+    grade: "D",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 30,
+    labor: 25,
+    carbon: 70,
+    alternatives: ["Pull&Bear", "Stradivarius", "Arket", "Weekday"],
+    alternativeIds: ["pull-bear", "stradivarius", "arket", "weekday"],
+    description: "Бренд группы Inditex, ориентированный на молодёжь. Быстрая смена коллекций, низкие цены, отсутствие прозрачности в цепочках поставок.",
+    founded: 1998,
+    country: "Испания"
+  },
+  "pull-bear": {
+    id: "pull-bear",
+    name: "Pull&Bear",
+    grade: "D",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 31,
+    labor: 26,
+    carbon: 69,
+    alternatives: ["Bershka", "Stradivarius", "Arket", "Weekday"],
+    alternativeIds: ["bershka", "stradivarius", "arket", "weekday"],
+    description: "Бренд группы Inditex. Молодёжная одежда, fast fashion модель, низкая прозрачность.",
+    founded: 1991,
+    country: "Испания"
+  },
+  "stradivarius": {
+    id: "stradivarius",
+    name: "Stradivarius",
+    grade: "D",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 29,
+    labor: 24,
+    carbon: 71,
+    alternatives: ["Bershka", "Pull&Bear", "Arket", "Weekday"],
+    alternativeIds: ["bershka", "pull-bear", "arket", "weekday"],
+    description: "Бренд группы Inditex. Женская одежда в стиле fast fashion.",
+    founded: 1999,
+    country: "Испания"
   },
   "nike": {
     id: "nike",
@@ -55,10 +93,9 @@ export const brands = {
     carbon: 60,
     alternatives: ["Nike Move to Zero", "Adidas", "Patagonia", "Veja"],
     alternativeIds: ["nike-move-to-zero", "adidas", "patagonia", "veja"],
-    description: "Nike использует переработанный полиэстер в некоторых коллекциях ('Move to Zero'), но основной объем производства остается углеродоемким. Есть проблемы с условиями труда на фабриках в Азии.",
+    description: "Nike использует переработанный полиэстер в некоторых коллекциях, но основной объем производства остается углеродоемким.",
     founded: 1964,
-    country: "США",
-    website: "https://www.nike.com"
+    country: "США"
   },
   "adidas": {
     id: "adidas",
@@ -70,10 +107,51 @@ export const brands = {
     carbon: 55,
     alternatives: ["Adidas x Parley", "Veja", "Patagonia", "ON Running"],
     alternativeIds: ["adidas-parley", "veja", "patagonia", "on-running"],
-    description: "Adidas сотрудничает с Parley для создания кроссовок из океанского пластика. Есть цели по сокращению выбросов, но условия труда всё ещё требуют улучшения.",
+    description: "Adidas сотрудничает с Parley для создания кроссовок из океанского пластика. Есть цели по сокращению выбросов.",
     founded: 1949,
-    country: "Германия",
-    website: "https://www.adidas.com"
+    country: "Германия"
+  },
+  "puma": {
+    id: "puma",
+    name: "Puma",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 52,
+    labor: 44,
+    carbon: 58,
+    alternatives: ["Adidas", "Veja", "Patagonia", "Allbirds"],
+    alternativeIds: ["adidas", "veja", "patagonia", "allbirds"],
+    description: "Puma использует переработанные материалы в некоторых коллекциях, но прозрачность низкая.",
+    founded: 1948,
+    country: "Германия"
+  },
+  "new-balance": {
+    id: "new-balance",
+    name: "New Balance",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 54,
+    labor: 46,
+    carbon: 56,
+    alternatives: ["Adidas", "Veja", "Patagonia", "Allbirds"],
+    alternativeIds: ["adidas", "veja", "patagonia", "allbirds"],
+    description: "New Balance производит часть обуви в США и Великобритании, но прозрачность цепочек поставок средняя.",
+    founded: 1906,
+    country: "США"
+  },
+  "reebok": {
+    id: "reebok",
+    name: "Reebok",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 50,
+    labor: 42,
+    carbon: 60,
+    alternatives: ["Adidas", "Veja", "Patagonia", "Allbirds"],
+    alternativeIds: ["adidas", "veja", "patagonia", "allbirds"],
+    description: "Reebok принадлежит Adidas Group. Есть коллекции из переработанных материалов, но прогресс медленный.",
+    founded: 1958,
+    country: "США"
   },
   "uniqlo": {
     id: "uniqlo",
@@ -85,13 +163,290 @@ export const brands = {
     carbon: 58,
     alternatives: ["Arket", "COS", "Muji", "Patagonia"],
     alternativeIds: ["arket", "cos", "muji", "patagonia"],
-    description: "Uniqlo производит качественную одежду, но прозрачность цепочек поставок низкая. Есть программа переработки, но в основном бренд остаётся в сегменте масс-маркета.",
+    description: "Uniqlo производит качественную одежду, но прозрачность цепочек поставок низкая. Есть программа переработки.",
     founded: 1949,
-    country: "Япония",
-    website: "https://www.uniqlo.com"
+    country: "Япония"
   },
-
-  // === СРЕДНИЙ РЕЙТИНГ (B) ===
+  "mango": {
+    id: "mango",
+    name: "Mango",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 48,
+    labor: 40,
+    carbon: 62,
+    alternatives: ["Arket", "COS", "Weekday", "Monki"],
+    alternativeIds: ["arket", "cos", "weekday", "monki"],
+    description: "Испанский бренд масс-маркета. Есть линия 'Committed' из устойчивых материалов, но основной объём — fast fashion.",
+    founded: 1984,
+    country: "Испания"
+  },
+  "asos": {
+    id: "asos",
+    name: "ASOS",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 46,
+    labor: 38,
+    carbon: 64,
+    alternatives: ["Arket", "Weekday", "Monki", "Patagonia"],
+    alternativeIds: ["arket", "weekday", "monki", "patagonia"],
+    description: "Онлайн-ретейлер. Есть линия 'ASOS Responsible', но много брендов fast fashion.",
+    founded: 2000,
+    country: "Великобритания"
+  },
+  "tommy-hilfiger": {
+    id: "tommy-hilfiger",
+    name: "Tommy Hilfiger",
+    grade: "C+",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 56,
+    labor: 48,
+    carbon: 54,
+    alternatives: ["Arket", "COS", "Patagonia", "Nudie Jeans"],
+    alternativeIds: ["arket", "cos", "patagonia", "nudie-jeans"],
+    description: "Есть программа устойчивого развития, но прозрачность низкая. Большинство продукции — обычный масс-маркет.",
+    founded: 1985,
+    country: "США"
+  },
+  "calvin-klein": {
+    id: "calvin-klein",
+    name: "Calvin Klein",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 48,
+    labor: 42,
+    carbon: 58,
+    alternatives: ["Arket", "COS", "Pact", "Organic Basics"],
+    alternativeIds: ["arket", "cos", "pact", "organic-basics"],
+    description: "Используют переработанные материалы в некоторых коллекциях, но прозрачность низкая.",
+    founded: 1968,
+    country: "США"
+  },
+  "guess": {
+    id: "guess",
+    name: "Guess",
+    grade: "D+",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 35,
+    labor: 30,
+    carbon: 65,
+    alternatives: ["Arket", "Weekday", "Monki", "Levi's"],
+    alternativeIds: ["arket", "weekday", "monki", "levis"],
+    description: "Американский бренд джинсов и одежды. Низкая прозрачность, проблемы с условиями труда.",
+    founded: 1981,
+    country: "США"
+  },
+  "levis": {
+    id: "levis",
+    name: "Levi's",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 68,
+    labor: 60,
+    carbon: 48,
+    alternatives: ["Nudie Jeans", "Armedangels", "MUD Jeans", "Outerknown"],
+    alternativeIds: ["nudie-jeans", "armedangels", "mud-jeans", "outerknown"],
+    description: "Levi's имеет программу устойчивого производства джинсов (WaterLess), но прозрачность цепочек поставок средняя.",
+    founded: 1853,
+    country: "США"
+  },
+  "lacoste": {
+    id: "lacoste",
+    name: "Lacoste",
+    grade: "C+",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 55,
+    labor: 48,
+    carbon: 52,
+    alternatives: ["Patagonia", "Arket", "COS", "Veja"],
+    alternativeIds: ["patagonia", "arket", "cos", "veja"],
+    description: "Французский бренд. Есть программа устойчивого развития, но прогресс медленный.",
+    founded: 1933,
+    country: "Франция"
+  },
+  "g-star-raw": {
+    id: "g-star-raw",
+    name: "G-Star Raw",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 66,
+    labor: 58,
+    carbon: 46,
+    alternatives: ["Nudie Jeans", "Armedangels", "Levi's", "Outerknown"],
+    alternativeIds: ["nudie-jeans", "armedangels", "levis", "outerknown"],
+    description: "Бренд джинсов. Линия 'RAW for the Oceans' из переработанного океанского пластика. Прозрачность выше средней.",
+    founded: 1989,
+    country: "Нидерланды"
+  },
+  "superdry": {
+    id: "superdry",
+    name: "Superdry",
+    grade: "D+",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 38,
+    labor: 32,
+    carbon: 62,
+    alternatives: ["Arket", "Weekday", "Monki", "Patagonia"],
+    alternativeIds: ["arket", "weekday", "monki", "patagonia"],
+    description: "Британский бренд. Низкая прозрачность, основное производство в странах Азии.",
+    founded: 2003,
+    country: "Великобритания"
+  },
+  "fila": {
+    id: "fila",
+    name: "Fila",
+    grade: "D",
+    gradeColor: "bg-red-100 text-red-700",
+    eco: 34,
+    labor: 28,
+    carbon: 66,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Adidas"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "adidas"],
+    description: "Итальянский спортивный бренд. Низкая прозрачность, нет информации об устойчивом развитии.",
+    founded: 1911,
+    country: "Италия"
+  },
+  "converse": {
+    id: "converse",
+    name: "Converse",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 48,
+    labor: 40,
+    carbon: 58,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Adidas"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "adidas"],
+    description: "Принадлежит Nike. Есть коллекции из переработанных материалов, но прогресс медленный.",
+    founded: 1908,
+    country: "США"
+  },
+  "vans": {
+    id: "vans",
+    name: "Vans",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 46,
+    labor: 42,
+    carbon: 56,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Adidas"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "adidas"],
+    description: "Принадлежит VF Corporation. Есть программа устойчивого развития, но прозрачность низкая.",
+    founded: 1966,
+    country: "США"
+  },
+  "the-north-face": {
+    id: "the-north-face",
+    name: "The North Face",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 70,
+    labor: 62,
+    carbon: 44,
+    alternatives: ["Patagonia", "Armedangels", "Outerknown", "Tentree"],
+    alternativeIds: ["patagonia", "armedangels", "outerknown", "tentree"],
+    description: "Бренд принадлежит VF Corporation. Используют переработанные материалы, но прозрачность средняя.",
+    founded: 1966,
+    country: "США"
+  },
+  "columbia": {
+    id: "columbia",
+    name: "Columbia",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 52,
+    labor: 44,
+    carbon: 54,
+    alternatives: ["Patagonia", "The North Face", "Armedangels", "Outerknown"],
+    alternativeIds: ["patagonia", "the-north-face", "armedangels", "outerknown"],
+    description: "Американский бренд спортивной одежды. Есть программа устойчивого развития, но прогресс медленный.",
+    founded: 1938,
+    country: "США"
+  },
+  "arcteryx": {
+    id: "arcteryx",
+    name: "Arc'teryx",
+    grade: "B",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 74,
+    labor: 68,
+    carbon: 40,
+    alternatives: ["Patagonia", "The North Face", "Outerknown", "Armedangels"],
+    alternativeIds: ["patagonia", "the-north-face", "outerknown", "armedangels"],
+    description: "Канадский бренд высококачественной одежды для активного отдыха. Используют устойчивые материалы, высокая цена.",
+    founded: 1989,
+    country: "Канада"
+  },
+  "timberland": {
+    id: "timberland",
+    name: "Timberland",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 68,
+    labor: 60,
+    carbon: 46,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Nudie Jeans"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "nudie-jeans"],
+    description: "Принадлежит VF Corporation. Используют переработанные материалы, есть цели по устойчивому развитию.",
+    founded: 1952,
+    country: "США"
+  },
+  "doc-martens": {
+    id: "doc-martens",
+    name: "Dr. Martens",
+    grade: "C+",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 56,
+    labor: 48,
+    carbon: 52,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Nudie Jeans"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "nudie-jeans"],
+    description: "Бренд обуви. Есть линия из переработанных материалов, но прозрачность низкая.",
+    founded: 1947,
+    country: "Великобритания"
+  },
+  "decathlon": {
+    id: "decathlon",
+    name: "Decathlon",
+    grade: "C",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 48,
+    labor: 42,
+    carbon: 56,
+    alternatives: ["Patagonia", "The North Face", "Armedangels", "Tentree"],
+    alternativeIds: ["patagonia", "the-north-face", "armedangels", "tentree"],
+    description: "Французский ретейлер спортивных товаров. Есть программа устойчивого развития, но основные объёмы — масс-маркет.",
+    founded: 1976,
+    country: "Франция"
+  },
+  "lululemon": {
+    id: "lululemon",
+    name: "Lululemon",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 66,
+    labor: 58,
+    carbon: 48,
+    alternatives: ["Patagonia", "Armedangels", "Girlfriend Collective", "Outerknown"],
+    alternativeIds: ["patagonia", "armedangels", "girlfriend-collective", "outerknown"],
+    description: "Канадский бренд спортивной одежды. Используют переработанные материалы, но есть вопросы по прозрачности.",
+    founded: 1998,
+    country: "Канада"
+  },
+  "girlfriend-collective": {
+    id: "girlfriend-collective",
+    name: "Girlfriend Collective",
+    grade: "A-",
+    gradeColor: "bg-green-100 text-green-700",
+    eco: 86,
+    labor: 84,
+    carbon: 28,
+    alternatives: ["Patagonia", "Armedangels", "Outerknown", "Tentree"],
+    alternativeIds: ["patagonia", "armedangels", "outerknown", "tentree"],
+    description: "Бренд спортивной одежды из переработанных материалов. Прозрачные цепочки поставок, сертифицированы.",
+    founded: 2016,
+    country: "США"
+  },
   "arket": {
     id: "arket",
     name: "Arket",
@@ -102,10 +457,9 @@ export const brands = {
     carbon: 40,
     alternatives: ["COS", "& Other Stories", "Weekday", "Monki"],
     alternativeIds: ["cos", "other-stories", "weekday", "monki"],
-    description: "Arket — бренд H&M Group, специализирующийся на качественной одежде из устойчивых материалов. Используют переработанный полиэстер, органический хлопок и шерсть. Прозрачность цепочек поставок выше среднего.",
+    description: "Arket — бренд H&M Group, специализирующийся на качественной одежде из устойчивых материалов.",
     founded: 2017,
-    country: "Швеция",
-    website: "https://www.arket.com"
+    country: "Швеция"
   },
   "cos": {
     id: "cos",
@@ -117,10 +471,9 @@ export const brands = {
     carbon: 42,
     alternatives: ["Arket", "Weekday", "& Other Stories", "Filippa K"],
     alternativeIds: ["arket", "weekday", "other-stories", "filippa-k"],
-    description: "COS (Collection of Style) — бренд H&M Group с минималистичным дизайном. Используют устойчивые материалы, есть программы переработки. Качество выше среднего.",
+    description: "COS — бренд H&M Group с минималистичным дизайном. Используют устойчивые материалы.",
     founded: 2007,
-    country: "Швеция",
-    website: "https://www.cos.com"
+    country: "Швеция"
   },
   "weekday": {
     id: "weekday",
@@ -132,10 +485,9 @@ export const brands = {
     carbon: 38,
     alternatives: ["Monki", "Arket", "COS", "Levi's"],
     alternativeIds: ["monki", "arket", "cos", "levis"],
-    description: "Weekday — молодёжный бренд H&M Group. Активно используют переработанный деним и органический хлопок. Есть коллекции из сертифицированных материалов.",
+    description: "Weekday — молодёжный бренд H&M Group. Активно используют переработанный деним и органический хлопок.",
     founded: 2002,
-    country: "Швеция",
-    website: "https://www.weekday.com"
+    country: "Швеция"
   },
   "monki": {
     id: "monki",
@@ -147,10 +499,9 @@ export const brands = {
     carbon: 39,
     alternatives: ["Weekday", "Arket", "& Other Stories", "Girlfriend Collective"],
     alternativeIds: ["weekday", "arket", "other-stories", "girlfriend-collective"],
-    description: "Monki — яркий молодёжный бренд. Используют переработанные материалы, продвигают бодипозитив и устойчивую моду. Есть ремонтные мастерские.",
+    description: "Monki — яркий молодёжный бренд. Используют переработанные материалы, продвигают устойчивую моду.",
     founded: 2006,
-    country: "Швеция",
-    website: "https://www.monki.com"
+    country: "Швеция"
   },
   "veja": {
     id: "veja",
@@ -162,10 +513,9 @@ export const brands = {
     carbon: 28,
     alternatives: ["Patagonia", "Allbirds", "Cariuma", "Nada"],
     alternativeIds: ["patagonia", "allbirds", "cariuma", "nada"],
-    description: "Veja производит кроссовки из органического хлопка, дикого каучука и переработанных материалов. Прозрачные цепочки поставок, справедливая оплата труда. Французский бренд.",
+    description: "Veja производит кроссовки из органического хлопка, дикого каучука и переработанных материалов.",
     founded: 2004,
-    country: "Франция",
-    website: "https://www.veja-store.com"
+    country: "Франция"
   },
   "allbirds": {
     id: "allbirds",
@@ -177,13 +527,10 @@ export const brands = {
     carbon: 25,
     alternatives: ["Veja", "Patagonia", "Cariuma", "Nada"],
     alternativeIds: ["veja", "patagonia", "cariuma", "nada"],
-    description: "Allbirds — бренд обуви из натуральных материалов (меринос, эвкалипт, сахарный тростник). Углеродно-нейтральный бренд, компенсирует выбросы.",
+    description: "Allbirds — бренд обуви из натуральных материалов. Углеродно-нейтральный бренд.",
     founded: 2016,
-    country: "Новая Зеландия / США",
-    website: "https://www.allbirds.com"
+    country: "Новая Зеландия"
   },
-
-  // === ВЫСОКИЙ РЕЙТИНГ (A) ===
   "patagonia": {
     id: "patagonia",
     name: "Patagonia",
@@ -194,10 +541,9 @@ export const brands = {
     carbon: 25,
     alternatives: ["Pact", "Outerknown", "Armedangels", "Nudie Jeans"],
     alternativeIds: ["pact", "outerknown", "armedangels", "nudie-jeans"],
-    description: "Patagonia — золотой стандарт устойчивой моды. Используют переработанные материалы, ремонтируют одежду, жертвуют 1% с продаж на экологию. B Corp сертифицированы. Призывают не покупать лишнего.",
+    description: "Patagonia — золотой стандарт устойчивой моды. Используют переработанные материалы, ремонтируют одежду, жертвуют 1% с продаж на экологию.",
     founded: 1973,
-    country: "США",
-    website: "https://www.patagonia.com"
+    country: "США"
   },
   "armedangels": {
     id: "armedangels",
@@ -209,10 +555,9 @@ export const brands = {
     carbon: 30,
     alternatives: ["Patagonia", "Pact", "Nudie Jeans", "Filippa K"],
     alternativeIds: ["patagonia", "pact", "nudie-jeans", "filippa-k"],
-    description: "Немецкий бренд, производящий одежду из органических и переработанных материалов. Сертифицированы как B Corp. Прозрачные цепочки поставок, справедливая оплата.",
+    description: "Немецкий бренд, производящий одежду из органических и переработанных материалов.",
     founded: 2007,
-    country: "Германия",
-    website: "https://www.armedangels.com"
+    country: "Германия"
   },
   "99recycle": {
     id: "99recycle",
@@ -224,10 +569,9 @@ export const brands = {
     carbon: 35,
     alternatives: ["Armedangels", "Patagonia", "Recycle", "Botanica"],
     alternativeIds: ["armedangels", "patagonia", "recycle", "botanica"],
-    description: "Российский бренд, создающий одежду из переработанных материалов. Собирают пластиковые бутылки и перерабатывают их в ткань. Растёт прозрачность производства.",
+    description: "Российский бренд, создающий одежду из переработанных материалов.",
     founded: 2018,
-    country: "Россия",
-    website: "https://www.99recycle.ru"
+    country: "Россия"
   },
   "pact": {
     id: "pact",
@@ -239,10 +583,9 @@ export const brands = {
     carbon: 28,
     alternatives: ["Patagonia", "Armedangels", "Organic Basics", "Tentree"],
     alternativeIds: ["patagonia", "armedangels", "organic-basics", "tentree"],
-    description: "Pact производит одежду из органического хлопка. Fair Trade сертифицированы. Базовые вещи высокого качества по разумным ценам.",
+    description: "Pact производит одежду из органического хлопка. Fair Trade сертифицированы.",
     founded: 2009,
-    country: "США",
-    website: "https://www.wearpact.com"
+    country: "США"
   },
   "outerknown": {
     id: "outerknown",
@@ -254,10 +597,9 @@ export const brands = {
     carbon: 30,
     alternatives: ["Patagonia", "Armedangels", "Nudie Jeans", "Tentree"],
     alternativeIds: ["patagonia", "armedangels", "nudie-jeans", "tentree"],
-    description: "Бренд, основанный сёрфером Келли Слейтером. Используют переработанные материалы, органический хлопок. Прозрачные цепочки поставок.",
+    description: "Бренд, использующий переработанные материалы и органический хлопок.",
     founded: 2015,
-    country: "США",
-    website: "https://www.outerknown.com"
+    country: "США"
   },
   "nudie-jeans": {
     id: "nudie-jeans",
@@ -269,10 +611,9 @@ export const brands = {
     carbon: 27,
     alternatives: ["Patagonia", "Armedangels", "Outerknown", "MUD Jeans"],
     alternativeIds: ["patagonia", "armedangels", "outerknown", "mud-jeans"],
-    description: "Шведский бренд джинсов. Предлагает бесплатный ремонт, принимает старые джинсы на переработку. Используют органический хлопок. Прозрачность производства.",
+    description: "Шведский бренд джинсов. Предлагает бесплатный ремонт, принимает старые джинсы на переработку.",
     founded: 2001,
-    country: "Швеция",
-    website: "https://www.nudiejeans.com"
+    country: "Швеция"
   },
   "tentree": {
     id: "tentree",
@@ -284,10 +625,9 @@ export const brands = {
     carbon: 32,
     alternatives: ["Patagonia", "Armedangels", "Pact", "Outerknown"],
     alternativeIds: ["patagonia", "armedangels", "pact", "outerknown"],
-    description: "За каждую купленную вещь Tentree сажает 10 деревьев. Всего посажено более 100 миллионов деревьев. Используют экологичные материалы.",
+    description: "За каждую купленную вещь Tentree сажает 10 деревьев.",
     founded: 2012,
-    country: "Канада",
-    website: "https://www.tentree.com"
+    country: "Канада"
   },
   "organic-basics": {
     id: "organic-basics",
@@ -299,13 +639,10 @@ export const brands = {
     carbon: 24,
     alternatives: ["Pact", "Armedangels", "Tentree", "Girlfriend Collective"],
     alternativeIds: ["pact", "armedangels", "tentree", "girlfriend-collective"],
-    description: "Датский бренд базовой одежды. Используют органический хлопок, переработанные материалы. Углеродно-нейтральный бренд. Прозрачность производства.",
+    description: "Датский бренд базовой одежды. Используют органический хлопок, переработанные материалы.",
     founded: 2015,
-    country: "Дания",
-    website: "https://www.organicbasics.com"
+    country: "Дания"
   },
-
-  // === РОССИЙСКИЕ БРЕНДЫ ===
   "botanica": {
     id: "botanica",
     name: "Botanica",
@@ -316,10 +653,9 @@ export const brands = {
     carbon: 38,
     alternatives: ["99recycle", "Armedangels", "Patagonia", "Recycle"],
     alternativeIds: ["99recycle", "armedangels", "patagonia", "recycle"],
-    description: "Российский бренд одежды из натуральных тканей. Используют лён, хлопок, крапиву. Производство в России, прозрачность выше среднего.",
+    description: "Российский бренд одежды из натуральных тканей. Используют лён, хлопок, крапиву.",
     founded: 2015,
-    country: "Россия",
-    website: "https://www.botanicaclub.ru"
+    country: "Россия"
   },
   "recycle": {
     id: "recycle",
@@ -331,10 +667,9 @@ export const brands = {
     carbon: 45,
     alternatives: ["99recycle", "Botanica", "Armedangels", "Patagonia"],
     alternativeIds: ["99recycle", "botanica", "armedangels", "patagonia"],
-    description: "Российский бренд, создающий одежду из переработанных материалов. Сотрудничают с эко-проектами.",
+    description: "Российский бренд, создающий одежду из переработанных материалов.",
     founded: 2010,
-    country: "Россия",
-    website: "https://www.recyclemag.ru"
+    country: "Россия"
   },
   "svetlana": {
     id: "svetlana",
@@ -346,19 +681,116 @@ export const brands = {
     carbon: 36,
     alternatives: ["Botanica", "99recycle", "Armedangels", "Patagonia"],
     alternativeIds: ["botanica", "99recycle", "armedangels", "patagonia"],
-    description: "Российский бренд женской одежды из натуральных тканей. Производство в России, используют органический хлопок и лён.",
+    description: "Российский бренд женской одежды из натуральных тканей.",
     founded: 2017,
-    country: "Россия",
-    website: "https://www.svetlana.ru"
+    country: "Россия"
+  },
+  "vivienne-westwood": {
+    id: "vivienne-westwood",
+    name: "Vivienne Westwood",
+    grade: "B",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 72,
+    labor: 68,
+    carbon: 42,
+    alternatives: ["Stella McCartney", "Patagonia", "Armedangels", "Reformation"],
+    alternativeIds: ["stella-mccartney", "patagonia", "armedangels", "reformation"],
+    description: "Vivienne Westwood — британский бренд, известный активизмом в области климата. Бренд призывает покупать меньше и выбирать качественные вещи.",
+    founded: 1971,
+    country: "Великобритания"
+  },
+  "stella-mccartney": {
+    id: "stella-mccartney",
+    name: "Stella McCartney",
+    grade: "A-",
+    gradeColor: "bg-green-100 text-green-700",
+    eco: 88,
+    labor: 82,
+    carbon: 28,
+    alternatives: ["Vivienne Westwood", "Patagonia", "Armedangels", "Reformation"],
+    alternativeIds: ["vivienne-westwood", "patagonia", "armedangels", "reformation"],
+    description: "Stella McCartney — один из самых устойчивых люксовых брендов. Не используют кожу, мех, перья.",
+    founded: 2001,
+    country: "Великобритания"
+  },
+  "reformation": {
+    id: "reformation",
+    name: "Reformation",
+    grade: "B+",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 80,
+    labor: 74,
+    carbon: 36,
+    alternatives: ["Vivienne Westwood", "Stella McCartney", "Patagonia", "Armedangels"],
+    alternativeIds: ["vivienne-westwood", "stella-mccartney", "patagonia", "armedangels"],
+    description: "Reformation — американский бренд, фокусирующийся на устойчивом производстве.",
+    founded: 2009,
+    country: "США"
+  },
+  "muji": {
+    id: "muji",
+    name: "Muji",
+    grade: "C+",
+    gradeColor: "bg-yellow-100 text-yellow-700",
+    eco: 56,
+    labor: 48,
+    carbon: 52,
+    alternatives: ["Arket", "COS", "Uniqlo", "Patagonia"],
+    alternativeIds: ["arket", "cos", "uniqlo", "patagonia"],
+    description: "Японский бренд с минималистичной философией. Используют натуральные материалы, но прозрачность цепочек поставок низкая.",
+    founded: 1980,
+    country: "Япония"
+  },
+  "cariuma": {
+    id: "cariuma",
+    name: "Cariuma",
+    grade: "A-",
+    gradeColor: "bg-green-100 text-green-700",
+    eco: 86,
+    labor: 82,
+    carbon: 26,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Nada"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "nada"],
+    description: "Бренд кроссовок из устойчивых материалов. Сажают деревья за каждую проданную пару.",
+    founded: 2018,
+    country: "Бразилия"
+  },
+  "on-running": {
+    id: "on-running",
+    name: "ON Running",
+    grade: "B-",
+    gradeColor: "bg-blue-100 text-blue-700",
+    eco: 66,
+    labor: 58,
+    carbon: 46,
+    alternatives: ["Veja", "Allbirds", "Patagonia", "Adidas"],
+    alternativeIds: ["veja", "allbirds", "patagonia", "adidas"],
+    description: "Швейцарский бренд беговой обуви. Используют переработанные материалы, но прозрачность средняя.",
+    founded: 2010,
+    country: "Швейцария"
+  },
+  "nada": {
+    id: "nada",
+    name: "Nada",
+    grade: "A-",
+    gradeColor: "bg-green-100 text-green-700",
+    eco: 84,
+    labor: 80,
+    carbon: 30,
+    alternatives: ["Veja", "Allbirds", "Cariuma", "Patagonia"],
+    alternativeIds: ["veja", "allbirds", "cariuma", "patagonia"],
+    description: "Бренд обуви из переработанных материалов и органического хлопка. Прозрачность высокая.",
+    founded: 2015,
+    country: "США"
   }
 };
 
 export const searchBrands = (query) => {
   const lowerQuery = query.toLowerCase().trim();
   if (!lowerQuery) return [];
-  
-  return Object.values(brands).filter(brand => 
-    brand.name.toLowerCase().includes(lowerQuery) || 
+
+  return Object.values(brands).filter(brand =>
+    brand.name.toLowerCase().includes(lowerQuery) ||
     brand.id.includes(lowerQuery)
   );
 };
@@ -369,6 +801,21 @@ export const getBrandById = (id) => {
 
 export const getAllBrands = () => {
   return Object.values(brands);
+};
+
+export const getPopularBrands = (limit = 20) => {
+  const popularIds = [
+    "zara", "hm", "bershka", "pull-bear", "stradivarius", "mango", "asos",
+    "nike", "adidas", "puma", "new-balance", "reebok", "converse", "vans", "fila",
+    "uniqlo", "muji", "tommy-hilfiger", "calvin-klein", "guess", "levis",
+    "the-north-face", "columbia", "arcteryx", "timberland", "decathlon",
+    "vivienne-westwood", "stella-mccartney", "reformation",
+    "patagonia", "armedangels", "veja", "allbirds", "cariuma", "nada", "on-running",
+    "99recycle", "botanica", "recycle", "svetlana",
+    "arket", "cos", "weekday", "monki"
+  ];
+  const popular = popularIds.map(id => brands[id]).filter(b => b);
+  return popular.slice(0, limit);
 };
 
 export const getBrandsByGrade = (grade) => {
