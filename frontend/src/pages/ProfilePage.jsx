@@ -11,10 +11,14 @@ const ProfilePage = () => {
   const getGradeColor = (grade) => {
     const colors = {
       'A': 'bg-green-100 text-green-700',
+      'A-': 'bg-green-100 text-green-700',
       'B': 'bg-blue-100 text-blue-700',
+      'B+': 'bg-blue-100 text-blue-700',
+      'B-': 'bg-blue-100 text-blue-700',
       'C': 'bg-yellow-100 text-yellow-700',
       'C+': 'bg-yellow-100 text-yellow-700',
-      'D': 'bg-red-100 text-red-700'
+      'D': 'bg-red-100 text-red-700',
+      'D+': 'bg-red-100 text-red-700'
     };
     return colors[grade] || 'bg-gray-100 text-gray-700';
   };
@@ -26,7 +30,6 @@ const ProfilePage = () => {
   const historyBrands = searchHistory
     .map(id => getBrandById(id))
     .filter(brand => brand !== undefined);
-
 
   if (!user) {
     return (
@@ -61,17 +64,18 @@ const ProfilePage = () => {
               Добро пожаловать в ваш личный кабинет. Здесь хранятся избранные бренды и история поиска.
             </p>
           </div>
-          <div className="text-right">
-            <p className="text-sm text-gray-400">
-              {favoriteBrands.length} в избранном
-            </p>
-            <p className="text-sm text-gray-400">
-              {historyBrands.length} в истории
-            </p>
+          <div className="flex gap-4">
+            <div className="bg-white rounded-xl px-4 py-2 text-center min-w-[100px] shadow-sm">
+              <div className="text-2xl font-bold text-green-600">{favoriteBrands.length}</div>
+              <div className="text-xs text-gray-500">в избранном</div>
+            </div>
+            <div className="bg-white rounded-xl px-4 py-2 text-center min-w-[100px] shadow-sm">
+              <div className="text-2xl font-bold text-blue-600">{historyBrands.length}</div>
+              <div className="text-xs text-gray-500">в истории</div>
+            </div>
           </div>
         </div>
       </div>
-
 
       <div className="flex gap-4 border-b mb-6">
         <button
@@ -82,7 +86,7 @@ const ProfilePage = () => {
               : 'text-gray-500 hover:text-green-600'
           }`}
         >
-        Избранное ({favoriteBrands.length})
+          Избранное ({favoriteBrands.length})
         </button>
         <button
           onClick={() => setActiveTab('history')}
@@ -92,7 +96,7 @@ const ProfilePage = () => {
               : 'text-gray-500 hover:text-green-600'
           }`}
         >
-        История поиска ({historyBrands.length})
+          История поиска ({historyBrands.length})
         </button>
       </div>
 
@@ -100,7 +104,6 @@ const ProfilePage = () => {
         <>
           {favoriteBrands.length === 0 ? (
             <div className="bg-white rounded-2xl shadow p-12 text-center">
-
               <h3 className="text-lg font-semibold text-gray-700 mb-2">
                 Пока нет избранных брендов
               </h3>
@@ -195,7 +198,6 @@ const ProfilePage = () => {
         </>
       )}
 
-      {/* Советы */}
       <div className="mt-8 bg-gray-50 rounded-xl p-4 text-center">
         <p className="text-sm text-gray-500">
           Совет: Добавляйте понравившиеся бренды в избранное, чтобы не потерять их.
